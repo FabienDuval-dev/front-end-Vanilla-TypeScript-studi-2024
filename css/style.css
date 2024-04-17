@@ -22,6 +22,46 @@ textarea {
       height: 100vh;
 }
 
+.content-billeterie {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border: 1px solid #000; /* Ajoute une bordure noire */
+      padding: 20px; /* Ajoute de l'espace autour des boutons */
+}
+
+
+.title-container {
+      position: relative;
+      text-align: left;
+      margin-bottom: 20px;
+}
+
+.title-container h4 {
+      background-color: #fff;
+      display: inline-block;
+      padding: 0 10px;
+      position: relative;
+      top: -10px;
+      z-index: 1;
+}
+
+.info-container-NomPrenomEmail p {
+      color: gray;
+      font-style: italic;
+}
+
+.button-centered-opacity-container {
+      border-top: 1px solid #000;
+      position: relative;
+      top: -1px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec 80% d'opacité */
+      border: 1px solid #000; /* Bordure noire */
+      padding: 20px; /* Espace autour des boutons */
+}
+
 textarea {
       display:flex;
       align-items: center;
