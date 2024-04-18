@@ -355,4 +355,7 @@ textarea {
       }
 }
 
-
+.nav-item a:hover {
+      background-color: blue;
+      color: white;
+}

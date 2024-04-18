@@ -1,3 +1,122 @@
+/*Personnal style */
+
+.fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: lightgrey;
+      height: 40px;
+}
+
+label,
+textarea {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+}
+
+.content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+
+.content-billeterie {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    /*  height: 100vh; */
+      border: 1px solid #000; /* Ajoute une bordure noire */
+      padding: 20px; /* Ajoute de l'espace autour des boutons */
+}
+
+
+.title-container {
+      position: relative;
+      text-align: left;
+      margin-bottom: 20px;
+}
+
+.title-container h4 {
+      background-color: #fff;
+      display: inline-block;
+      padding: 0 10px;
+      position: relative;
+      top: -10px;
+      z-index: 1;
+}
+
+.info-container-NomPrenomEmail p {
+      color: gray;
+      font-style: italic;
+}
+
+
+
+textarea {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      height: 80%;
+      text-aligh: center;
+}
+
+label {
+      display: block;
+      margin-top: 8px;
+      margin-bottom: 8px;
+}
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      /* URL de votre image */
+      background-image: url('../img/origine-logo-JO-Paris-2024v0png.png');
+      /* Position de l'image, en général : centrée */
+      background-position: center;
+      /* L'image reste fixe lors du défilement */
+      background-attachment: fixed;
+      background-size: cover;
+      color-adjust: white;
+}
+
+.button-centered-opacity-container {
+      border-top: 1px solid #000;
+      position: relative;
+      top: -1px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec 80% d'opacité */
+      border: 1px solid #000; /* Bordure noire */
+      padding: 20px; /* Espace autour des boutons */
+}
+
+.btn-center-grouped {
+      display: flex;
+      justify-content: center
+}
+
+.qr-code-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 300px;
+      height: 300px;
+      background-color: lightgray;
+}
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -7,6 +126,13 @@ html {
       font-size: 1em;
       line-height: 1.4;
 }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
       background: #b3d4fc;
@@ -227,89 +353,6 @@ textarea {
       h3 {
             page-break-after: avoid;
       }
-}
-
-/************************************************************************************************
-/                                                     Personnal style
-************************************************************************************************/
-
-
-.fixed-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: lightgrey;
-      height: 40px;
-}
-
-label,
-textarea {
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-}
-
-.content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-}
-
-textarea {
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      height: 80%;
-      text-aligh: center;
-}
-
-label {
-      display: block;
-      margin-top: 8px;
-      margin-bottom: 8px;
-}
-
-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      /* URL de votre image */
-      background-image: url('../img/origine-logo-JO-Paris-2024v0png.png');
-      /* Position de l'image, en général : centrée */
-      background-position: center;
-      /* L'image reste fixe lors du défilement */
-      background-attachment: fixed;
-      background-size: cover;
-      color-adjust: white;
-}
-
-.qr-code-buttons-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec 80% d'opacité */
-      border: 1px solid #000; /* Bordure noire */
-      padding: 20px; /* Espace autour des boutons */
-}
-
-.content-qr-code {
-      width:300px;
-      height: 300px;
-      align-items: center;
-      border: 1px solid #000; /* Ajoute une bordure noire */
-      padding: 20px; /* Ajoute de l'espace autour des boutons */
-}
-
-.buttons-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /*background-color: lightgrey; */
-      padding: 20px; /* Espace autour des boutons */
-      margin-top: 20px; /* Ajoute un espace au-dessus des boutons */
 }
 
 .nav-item a:hover {

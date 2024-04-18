@@ -1,3 +1,14 @@
+
+
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -7,6 +18,13 @@ html {
       font-size: 1em;
       line-height: 1.4;
 }
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
       background: #b3d4fc;
@@ -229,10 +247,11 @@ textarea {
       }
 }
 
-/************************************************************************************************
-/                                                     Personnal style
-************************************************************************************************/
+/* ==========================================================================
+   Print styles.
+   ========================================================================== */
 
+/*Personnal style */
 
 .fixed-header {
       position: fixed;
@@ -243,10 +262,10 @@ textarea {
       height: 40px;
 }
 
-label,
-textarea {
-      font-size: 0.8rem;
-      letter-spacing: 1px;
+
+label, textarea {
+      font-family: Arial, sans-serif; /* Change la police à Arial */
+      font-size: 16px; /* Change la taille de la police à 16px */
 }
 
 .content {
@@ -255,6 +274,19 @@ textarea {
       align-items: center;
       height: 100vh;
 }
+
+.content-billeterie {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border: 1px solid #000; /* Ajoute une bordure noire */
+      padding: 20px; /* Ajoute de l'espace autour des boutons */
+}
+
+
+
 
 textarea {
       display:flex;
@@ -276,43 +308,19 @@ body {
       align-items: center;
       height: 100vh;
       margin: 0;
-      /* URL de votre image */
       background-image: url('../img/origine-logo-JO-Paris-2024v0png.png');
-      /* Position de l'image, en général : centrée */
       background-position: center;
-      /* L'image reste fixe lors du défilement */
       background-attachment: fixed;
       background-size: cover;
       color-adjust: white;
 }
 
-.qr-code-buttons-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec 80% d'opacité */
-      border: 1px solid #000; /* Bordure noire */
-      padding: 20px; /* Espace autour des boutons */
-}
-
-.content-qr-code {
-      width:300px;
-      height: 300px;
-      align-items: center;
-      border: 1px solid #000; /* Ajoute une bordure noire */
-      padding: 20px; /* Ajoute de l'espace autour des boutons */
-}
-
-.buttons-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /*background-color: lightgrey; */
-      padding: 20px; /* Espace autour des boutons */
-      margin-top: 20px; /* Ajoute un espace au-dessus des boutons */
-}
-
 .nav-item a:hover {
+      background-color: blue;
+      color: white;
+}
+
+.dropdown-item a {
       background-color: blue;
       color: white;
 }

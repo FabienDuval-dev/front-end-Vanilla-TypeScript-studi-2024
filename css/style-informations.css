@@ -314,3 +314,8 @@ body {
       background-size: cover;
       color-adjust: white;
 }
+
+.nav-item a:hover {
+      background-color: blue;
+      color: white;
+}
