@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="description" content="">
+
+      <meta property="og:title" content="">
+      <meta property="og:type" content="">
+      <meta property="og:url" content="">
+      <meta property="og:image" content="">
+
+      <link rel="icon" href="/favicon.ico" sizes="any">
+      <link rel="icon" href="/icon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="icon.png">
+
+      <link rel="manifest" href="site.webmanifest">
+      <meta name="theme-color" content="#fafafa">
+      <!-- Lien CSS de Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- JavaScript et Popper.js (pour les composants interactifs) -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+
+<!-- Code HTML du ruban gris des différents choix -->
+
+<ul class="fixed-header nav  justify-content-center">
+      <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">Découverte</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link disabled" href="#">Billetterie</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link active" href="#">Compte</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link disabled">Qr Code</a>
+      </li>
+      <li class="nav-item mr-auto">
+            <a class="nav-link disabled" href="#">Informations</a>
+      </li>
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle disabled" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Langue</a>
+            <ul class="dropdown-menu">
+                  <li><a class="dropdown-item active" href="#">Français</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Anglais</a></li>
+            </ul>
+      </li>
+</ul>
+
+
+<!-- Code HTML de la page du compte utilisateur -->
+
+<div class="content-billeterie">
+      <div class="button-centered-opacity-container">
+
+            <div class="info-container-NomPrenomEmail">
+                  <p id="nom">Nom : DUPONT</p>
+                  <p id="prenom">Prénom : John</p>
+                  <p id="email">Email : john.dupont@adresseinventée.com</p>
+            </div>
+
+            <button type="button" class="btn btn-primary">Modifier le mot de passe</button>
+            <button type="button" class="btn btn-danger">Supprimer le compte</button>
+
+      </div>
+</div>
+
+</body>
+</html>
+
